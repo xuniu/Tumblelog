@@ -3,26 +3,138 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tumblelog</title>
+	<style>
+	body {
+		width: 928px;
+		margin: 0 auto;
+		font-family: "Microsoft YaHei","微软雅黑",tahoma,arial,simhei, "黑体";
+		font-size: 12px;
+		color: #444;
+
+	}
+	#navBar, a {
+		text-decoration: none;
+	}
+	header {
+		background-color: #3b4247;
+		color: #e2e2e2;
+		overflow:hidden;
+		height: 82px;
+	}
+	header section a {
+		float: left;
+		text-indent: -9999px;
+	}
+	
+	#logo, #manager a {
+		background: url(hd24.png) no-repeat 999px 999px;
+	}
+
+	#logo {
+		margin: 19px 0 0;
+		background-position: 0 0;
+		height: 44px;
+		width: 188px;
+	}
+	#beta {
+		background: url(bg-player.png) no-repeat 0 -63px;
+		margin-top: 43px;
+		width: 77px;
+		height: 17px;
+	}
+	ul {
+		list-style-type: none;
+	}
+	#navBar {
+		margin: 40px auto;
+		float: right;
+		color: white;
+		overflow: hidden;
+	}
+	#navBar li, #navBar ul {
+		display: inline-block;
+		margin: 0 0 0 25px;
+	}
+	#navBar a {
+		color: #fff;
+		font-size: 16px;
+	}
+	#manager li {
+		text-indent: -9999px;
+	}
+	#manager li a {
+		width: 24px;
+		height: 24px;
+		overflow: hidden;
+		float: left;
+	}
+
+	#manager #add {
+		background-position: 0 -159px;
+	}
+
+	#manager #message {
+		background-position: -35px -159px;
+	}
+
+	#manager #setting {
+		background-position: -72px -159px;
+	}
+
+	#manager #invite {
+		background-position: -218px -159px;
+	}
+
+	#manager #logout {
+		background-position: -143px -159px;
+	}
+	
+	#main {
+		clear: both;
+	}
+	</style>
 </head>
 <body>
 	<header>
-		<section id="logo">
-			<a href="#">Tumblelog</a>
-			<a href="#">Beta</a>
+		<section>
+				<a id="logo" href="#">Tumblelog</a>
+				<a id="beta" href="#">Beta</a>
 		</section>
-		<nav>
-			<ul id="navBar">
+		<nav id="navBar">
+			<ul id="blog">
 				<li><a href="">首页</a></li>
 				<li><a href="">IMXN</a></li>
-				<li><a href="" title="新建">管理</a></li>
-				<li><a href="" title="通知">消息</a></li>
-				<li><a href="" title="设置">设置</a></li>
-				<li><a href="" title="邀请">邀请</a></li>
-				<li><a href="" title="退出">退出</a></li>
+			</ul>
+			<ul id="manager">
+				<li><a id="add" href="" title="新建">管理</a></li>
+				<li><a id="message" href="" title="通知">消息</a></li>
+				<li><a id="setting" href="" title="设置">设置</a></li>
+				<li><a id="invite" href="" title="邀请">邀请</a></li>
+				<li><a id="logout" href="" title="退出">退出</a></li>
 			</ul>
 		</nav>
 	</header>
-	<section id="main"></section>
-	<aside></aside>
+	<div id="main">
+		<ul>
+			<li><a href=""><strong>上传头像</strong></a></li>
+			<li><a href="">文字</a></li>
+			<li><a href="">图片</a></li>
+			<li><a href="">音乐</a></li>
+			<li><a href="">视频</a></li>
+		</ul>
+		<div><a href=""><img src="avatar.jpg" alt=""></a></div>
+		<section>
+			<article>
+				<h1>Ooparts</h1>
+				<p>希望玛雅人是靠谱的！</p>
+			</article>
+		</section>
+	</div>
+	<aside>
+		<ul>
+			<li><a href="">1个关注的博客</a></li>
+			<li><a href="">发现好博客</a></li>
+		</ul>
+	</aside>
 </body>
 </html>
