@@ -10,7 +10,7 @@
 		font-family: "Microsoft YaHei","微软雅黑",tahoma,arial,simhei, "黑体";
 		font-size: 12px;
 		color: #444;
-
+		background: url(body.png) repeat-x;
 	}
 	#navBar, a {
 		text-decoration: none;
@@ -26,7 +26,7 @@
 		text-indent: -9999px;
 	}
 	
-	#logo, #manager a {
+	#logo, #manager a, #blog #index {
 		background: url(hd24.png) no-repeat 999px 999px;
 	}
 
@@ -44,7 +44,10 @@
 	}
 	ul {
 		list-style-type: none;
+
 	}
+
+	
 	#navBar {
 		margin: 40px auto;
 		float: right;
@@ -54,13 +57,38 @@
 	#navBar li, #navBar ul {
 		display: inline-block;
 		margin: 0 0 0 25px;
+		float: left;
+	}
+
+	#navBar li {
+		height: 42px;
 	}
 	#navBar a {
 		color: #fff;
 		font-size: 16px;
 	}
+
+
+	#navBar #manager 
+	{
+		margin: 0;
+		padding: 0;
+		display: inline;
+	}
+
+	#blog {
+		line-height: 24px;
+		padding: 0 5px 0 0;
+	}
+
+	#blog #index {
+		background-position: center -107px;
+	}
 	#manager li {
 		text-indent: -9999px;
+		width: 24px;
+		
+		float: left;
 	}
 	#manager li a {
 		width: 24px;
@@ -102,7 +130,7 @@
 		</section>
 		<nav id="navBar">
 			<ul id="blog">
-				<li><a href="">首页</a></li>
+				<li id="index"><a href="">首页</a></li>
 				<li><a href="">IMXN</a></li>
 			</ul>
 			<ul id="manager">
