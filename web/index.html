@@ -20,6 +20,7 @@
 		color: #e2e2e2;
 		overflow:hidden;
 		height: 82px;
+		margin-bottom: 30px;
 	}
 	header section a {
 		float: left;
@@ -119,7 +120,141 @@
 	
 	#main {
 		clear: both;
+		width: 674px;
+		float: left;
 	}
+	#nav2 ul {
+		padding: 1px 2px 3px;
+		margin: 0 0 18px;
+		overflow: hidden;
+		background: url(nav224.png) no-repeat 999px 999px;
+		background-position: 0 0;
+	}
+
+	#nav2 li a {
+		background: url(nav224.png) no-repeat 999px 999px;
+		display: block;
+		height: 100%;
+		text-indent: -9999px;
+		overflow: hidden;
+		background-color: transparent;
+	}
+	#nav2 ul li{
+		float: left;
+		width: 140px;
+		height: 110px;
+	}
+	#nav2 #user {
+		width: 110px;
+	}
+	#nav2 #avatar {
+		background-position: 0 0;
+		width: 110px;
+	}
+	#content {
+		clear: both;
+		width: 585px;
+		text-align: left;
+		float: right;
+		overflow: hidden;
+	}
+	#isayt {
+		background: url(isay24.png);
+		background-position: -2295px 0;
+		text-indent: -9999px;
+		height: 24px;
+		text-align: left;
+	}
+	#isayt a {
+		background: url(isay24.png) no-repeat 999px 999px;
+		background-position: -671px 0;
+		width: 20px;
+		height: 19px;
+		overflow: hidden;
+		float: right;
+	}
+	#isaym {
+		background: url(isay24.png);
+		padding: 3px 32px 28px 53px;
+		background-position: -1015px 0;
+		background-repeat: repeat-y;
+		overflow: hidden;
+	}
+	#more {
+		margin: 16px 0;
+		text-align: left;
+		font-size: 12px;
+	}
+	#more a {
+		background: url(icon24.png);
+		float: left;
+		line-height: 15px;
+		color: #888;
+		padding-right: 16px;
+		background-position: right -2617px;
+	}
+	#opt {
+		clear: both;
+		float: right;
+
+	}
+	#opt li {
+		display: inline;
+	}
+	#opt li a {
+		color: #aaa;
+		margin-left: 18px;
+	}
+	#isayb {
+		clear: both;
+		height: 3px;
+		overflow: hidden;
+		background: url(isay24.png);
+		background-position: -1649px 0;
+	}
+	aside {
+		float: right;
+		width: 230px;
+		padding: 0 0 30px;
+	}
+	#menut {
+		width: 230px;
+		height: 4px;
+		overflow: hidden;
+		background: url(menu24.png);
+		background-position: 0 0;
+ 		}
+ 	#menum {
+ 		border-top: 0;
+ 		background: url(menu24.png);
+ 		background-position: -246px 0;
+ 		background-repeat: repeat-y;
+ 		overflow: hidden;
+ 	}
+
+ 	#menum ul {
+ 		margin: 0;
+ 		padding: 0;
+ 	}
+ 	#menum a {
+ 		float: left;
+ 		width: 100%;
+ 		line-height: 15px;
+
+ 	}
+ 	#menum #icn {
+ 		float: left;
+ 		background: url(icon24.png);
+ 		background-position: 0 -1464px;
+ 		width: 25px;
+ 		height: 17px;
+ 		margin: 0 0 0 16px;
+ 		overflow: hidden;
+ 	}
+ 	#menum ul li:first-child {
+ 		height: 53px;
+ 		background-color: #F3F3F3;
+ 	}
 	</style>
 </head>
 <body>
@@ -143,26 +278,48 @@
 		</nav>
 	</header>
 	<div id="main">
+		<nav id="nav2">
 		<ul>
-			<li><a href=""><strong>上传头像</strong></a></li>
+			<li id="user"><a id="avatar" href=""><strong>上传头像</strong></a></li>
 			<li><a href="">文字</a></li>
 			<li><a href="">图片</a></li>
 			<li><a href="">音乐</a></li>
 			<li><a href="">视频</a></li>
-		</ul>
-		<div><a href=""><img src="avatar.jpg" alt=""></a></div>
-		<section>
-			<article>
-				<h1>Ooparts</h1>
-				<p>希望玛雅人是靠谱的！</p>
-			</article>
-		</section>
+		</ul></nav>
+		<div id="content">
+			<div id="isayt"><a href="" id="isayfull" title="查看全文">打开新页</a></div>
+			<div id="isaym">
+				<article>
+					<h1>Ooparts</h1>
+					<p>希望玛雅人是靠谱的！</p>
+					<div id="more">
+					<a href="">展开</a></div>
+				</article>
+				<div id="opt">
+					<ul>
+						<li><a href="">编辑</a></li>
+						<li><a href="">删除</a></li>
+						<li><a href="">评论</a></li>
+					</ul>
+				</div>
+				
+			</div>
+<div id="isayb"></div>
+		</div>
+		
 	</div>
 	<aside>
-		<ul>
-			<li><a href="">1个关注的博客</a></li>
-			<li><a href="">发现好博客</a></li>
-		</ul>
+		<div id="menut"></div>
+		<div id="menum">
+			<ul>
+				<li><a href=""><span id="icn"></span>
+					<span id="lg1">访问 IMXN</span>
+					<span id="lg2">imxuniu.lofter.com</span>
+				</a></li>
+				<li><a href="">发现好博客</a></li>
+			</ul>
+		</div>
+		<div id="menub"></div>
 	</aside>
 </body>
 </html>
